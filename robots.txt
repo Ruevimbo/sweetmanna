@@ -1,0 +1,6 @@
+# Allow all search engines to crawl all pages
+User-agent: *
+Disallow:
+
+# Optional: block folders you don’t want indexed
+# Disallow: /admin/
