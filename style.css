@@ -1,0 +1,253 @@
+/* ==============================
+   SWEET MANNA BAKERY STYLESHEET
+   ============================== */
+
+/* Fonts - girly & elegant */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@300;400;600&display=swap');
+
+:root {
+  --lavender: #d473d4;
+  --golden: #ffd54f;
+  --soft-pink: #fff0f6;
+  --white: #ffffff;
+  --dark: #4a2c2a;
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: linear-gradient(to bottom, #fffafc, #fff5f9);
+  color: var(--dark);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  text-align: center;
+  background: var(--soft-pink);
+  border-bottom: 4px solid var(--golden);
+  padding: 20px;
+}
+
+header h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: var(--lavender);
+  margin-bottom: 10px;
+}
+
+header img {
+  max-width: 180px;
+  border-radius: 50%;
+  border: 3px solid var(--golden);
+  margin: 10px 0;
+}
+
+header p {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--dark);
+  margin-bottom: 15px;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--lavender);
+  padding: 8px 14px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  background-color: var(--white);
+  border: 2px solid var(--golden);
+}
+
+nav a:hover {
+  background: var(--lavender);
+  color: var(--white);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Section Styling */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  color: var(--lavender);
+  margin-bottom: 15px;
+}
+
+article {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 700px;
+  background: var(--white);
+  border: 2px solid var(--golden);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+article h3 {
+  font-size: 1.5rem;
+  color: var(--lavender);
+}
+
+article img {
+  max-width: 100%;
+  border-radius: 15px;
+  margin: 15px 0;
+  border: 3px solid var(--golden);
+}
+
+/* ==============================
+   CHECKOUT TABLE STYLING
+   ============================== */
+
+#order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#order-table th, #order-table td {
+  border: 2px solid var(--golden);
+  padding: 12px 8px;
+  text-align: left;
+}
+
+#order-table th {
+  background: var(--lavender);
+  color: var(--white);
+  font-size: 1.1rem;
+}
+
+#order-table tbody tr:nth-child(even) {
+  background: var(--soft-pink);
+}
+
+#order-table input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#totals p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+/* ==============================
+   FORMS STYLING
+   ============================== */
+form {
+  background: var(--soft-pink);
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid var(--golden);
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+}
+
+form label {
+  font-weight: bold;
+  color: var(--dark);
+}
+
+form input, form textarea, form select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 15px;
+  border: 2px solid var(--lavender);
+  border-radius: 10px;
+  outline: none;
+}
+
+form button {
+  background: var(--lavender);
+  color: var(--white);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: var(--golden);
+  color: var(--dark);
+}
+
+
+#checkout button {
+  background: var(--lavender);
+  color: var(--white);
+  padding: 12px 25px;
+  border: 2px solid var(--golden);
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 5px var(--lavender);
+}
+
+#checkout button:hover {
+  background: var(--golden);
+  color: var(--dark);
+  box-shadow: 0 0 12px var(--golden), 0 0 20px var(--lavender);
+  transform: translateY(-2px);
+}
+
+/* ==============================
+   FOOTER HERO SHOT
+   ============================== */
+footer {
+  position: relative;
+  text-align: center;
+  color: var(--white);
+  padding: 80px 20px; /* bigger padding for hero effect */
+  overflow: hidden;
+  background-color: #d473d4; /* purple base */
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('_images/cef6359207669b9d78226b970ba34ca9.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.5; /* adjust overlay darkness */
+  z-index: 0;
+}
+
+footer * {
+  position: relative; /* ensures text and images appear above hero background */
+  z-index: 1;
+}

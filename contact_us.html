@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Manna Contact Us Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Center the location section */
+        .location-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .location-section h1 {
+            font-family: 'Great Vibes', cursive;
+            color: var(--lavender);
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .location-section iframe {
+            display: block;
+            margin: 0 auto;
+            border-radius: 15px;
+            border: 3px solid var(--golden);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sweet Manna Bakery</h1>
+        <img src="_images/Brown and Cream Rustic Cake and Bakery Logo .png" alt="Sweet Manna Logo">
+        <p>"Man shall not live by bread alone, but by every word of God." - Luke 4:4</p>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Menu and Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+
+        <section>
+            <h1>Contact Us Now!</h1>
+            <p><strong>Physical Address:</strong> 123 Sweet Street, Dessert City, Country</p>
+            <p><strong>Email:</strong> <a href="mailto:info@sweetmanna.com">info@sweetmanna.com</a></p>
+            <p><strong>Contact Number:</strong> <a href="tel:+2734567890">+27 34 567 890</a></p>
+        </section>
+
+        <section id="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </header>
+
+    <main>
+        <section class="location-section">
+            <h1>Our Location</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356.6207340332685!2d-97.1482396!3d32.7227044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e7ce8c9ab4b97%3A0x5ba3498a6dcea656!2s1301%20S%20Bowen%20Rd%2C%20Arlington%2C%20TX%2076013%2C%20USA!5e0!3m2!1sen!2sza!4v1755244678686!5m2!1sen!2sza" 
+                width="600" 
+                height="450" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Sweet Manna Bakery | Blessed to Serve You</p>
+    </footer>
+
+    <script src="script.js"></script>    
+</body>
+</html>
