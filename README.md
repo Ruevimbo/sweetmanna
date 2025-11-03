@@ -50,7 +50,13 @@ Goal 5: Ensure accessibility and scalability in future growth
 - **Sept 13 – Sept 17 (Week 6):** Delivery & checkout system added  
 - **Sept 18 – Sept 22 (Week 7):** Gallery page completed  
 - **Sept 23 – Sept 28 (Week 8):** README.md and documentation finalised  
-- **Sept 29:** Project submission 
+- **Sept 29:** Project submission Part 2
+**Oct 1 – Oct 7 (Week 9):** Added `change-log` file, created `script.js` for all JavaScript functionality, and added comments in HTML, CSS, and JS files  
+- **Oct 8 – Oct 12 (Week 10):** Implemented on-page and off-page SEO on all HTML files, added security measures, and updated navigation to include Inquiry page  
+- **Oct 13 – Oct 17 (Week 11):** Created Inquiry page and linked it to `script.js` and `style.css`, added `robots.txt` and `sitemaps.xml`  
+- **Oct 18 – Oct 22 (Week 12):** Added social media links in the footer and FAQs accordion on Contact Us page  
+- **Oct 23 – Oct 28 (Week 13):** Improved HTML structure across all pages following lecturer feedback for better semantic structure, readability, and maintainability  
+- **Nov 3:** Project submission Part 3
 
 ---
 
