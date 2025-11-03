@@ -144,6 +144,12 @@
   -  **References** 
     - Adeded more references as i have used other ways to help me understand and code my website properly.
 
+    **Improved HTML Structure on All Pages**
+- Reorganized and cleaned up the HTML structure across all files.
+- Fixed improper nesting, added semantic tags where necessary (header, main, footer, section).
+- Purpose: Comply with lecturer feedback, improve maintainability, readability, and accessibility.
+
+
   - **Overall Result:**  
     - Website now has improved functionality, SEO, security, and navigation.  
     - User experience enhanced with interactive features, FAQs, and smoother animations.  

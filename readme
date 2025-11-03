@@ -259,8 +259,15 @@ Goal 5: Ensure accessibility and scalability in future growth
   - **Comments Across Files:**  
     - Added detailed comments to HTML, CSS, and JS files to enhance readability and ease of future maintenance. 
 
+
     **References** 
     - Adeded more references as i have used other ways to help me understand and code my website properly.
+
+    
+    **Improved HTML Structure on All Pages**
+- Reorganized and cleaned up the HTML structure across all files.
+- Fixed improper nesting, added semantic tags where necessary (header, main, footer, section).
+- Purpose: Comply with lecturer feedback, improve maintainability, readability, and accessibility.
 
   - **Overall Result:**  
     - Website now has improved functionality, SEO, security, and navigation.  
