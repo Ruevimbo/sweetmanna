@@ -60,10 +60,12 @@ Goal 5: Ensure accessibility and scalability in future growth
 
 ---
 
-## Part 1 Details  
+## Part 1, 2, and 3  Details  
 - *Focus:* Establishing the website structure and basic HTML pages.  
 - *Completed:* Home, About, Menu, Contact, and Gallery pages with product descriptions.  
-- *Next Steps (Part 2 & 3):* Add styling (CSS), interactivity (JavaScript), and database/ordering functionality.  
+- *Next Steps (Part 2 & 3):* Add styling (CSS), interactivity (JavaScript), and database/ordering functionality.
+- *Completed:*Added Styling (CSS)
+- *Completed:*Added javaScripting and database/ordering functionality.
 
 ---
 
