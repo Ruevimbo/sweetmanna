@@ -286,19 +286,26 @@ Goal 5: Ensure accessibility and scalability in future growth
 ---
 
 ## References    
-
 - Canva. (2025). *Design inspiration and templates.* Retrieved from: https://www.canva.com  
+
+- Contentsquare. (2024). *Web design checklist: 15 steps to creating an amazing site.* [online] Available at: <https://contentsquare.com/guides/web-design/checklist/> [Accessed 3 Nov 2025].  
+  Source: contentsquare.com  
+
+- Google Search Central. (2025). *How To Add Javascript in your Website as an External File.* [online] Available at: <https://developers.google.com/search/docs/fundamentals/seo-starter-guide> [Accessed 3 Nov 2025].  
+  Source: developers.google.com  
+
 - Investopedia. (2024). *How Digital Marketing Can Help a Business Succeed.* Retrieved from: https://www.investopedia.com  
+
+- Neil Patel. (2025). *10 Best Practices to Improve Your SEO Rankings in 2025.* [online] Available at: <https://backlinko.com/hub/seo/best-practices> [Accessed 3 Nov 2025].  
+  Source: Backlinko  
+
 - OpenAI. (2025). *ChatGPT – Project structure and planning support.* Retrieved from: https://chat.openai.com  
+
 - Pinterest. (2025). *Creative bakery ideas.* Retrieved from: https://www.pinterest.com  
+
 - Reddit users. (2024). *Advice on Cheap Hosting and Domains in South Africa.* r/johannesburg. .co.za domains ~R100/year, free or cheap hosting options.  
-- Smith, J. (2023). *The Role of Faith in Christian Small Business Branding.* Cape Town: Divine Business Publishing.
-- - Contentsquare (2024) *Web design checklist: 15 steps to creating an amazing site*. [online] Available at: <https://contentsquare.com/guides/web-design/checklist/> [Accessed 3 Nov 2025].  
-  Source: contentsquare.com
-- Neil Patel (2025) *10 Best Practice to Improve Your SEO Rankings in 2025*. [online] Available at: <https://backlinko.com/hub/seo/best-practices> [Accessed 3 Nov 2025].  
-  Source: Backlinko
-   Google Search Central (2025) *How To Add Javascript in your Website as an xEternal File*. [online] Available at: <https://developers.google.com/search/docs/fundamentals/seo-starter-guide> [Accessed 3 Nov 2025].  
-  Source: developers.google.com
+
+- Smith, J. (2023). *The Role of Faith in Christian Small Business Branding.* Cape Town: Divine Business Publishing.  
 
 # sweetmanna
 sweet manna part 3 wede5020
