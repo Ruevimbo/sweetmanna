@@ -24,12 +24,18 @@ body {
   font-family: 'Nunito', sans-serif;
   background: linear-gradient(to bottom, #fffafc, #fff5f9);
   color: var(--dark);
-  margin: 0;
-  padding: 0;
   line-height: 1.6;
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out;
 }
 
-/* Header */
+body.page-loaded {
+  opacity: 1;
+}
+
+/* ==============================
+   HEADER
+   ============================== */
 header {
   text-align: center;
   background: var(--soft-pink);
@@ -58,15 +64,16 @@ header p {
   margin-bottom: 15px;
 }
 
-/* Navigation */
+/* ==============================
+   NAVIGATION
+   ============================== */
 nav ul {
   list-style: none;
-  padding: 0;
-  margin: 10px 0;
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  margin: 10px 0;
 }
 
 nav a {
@@ -86,7 +93,9 @@ nav a:hover {
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Section Styling */
+/* ==============================
+   SECTIONS & ARTICLES
+   ============================== */
 section {
   padding: 40px 20px;
   text-align: center;
@@ -110,11 +119,6 @@ article {
   transition: all 0.3s ease;
 }
 
-article h3 {
-  font-size: 1.5rem;
-  color: var(--lavender);
-}
-
 article img {
   max-width: 100%;
   border-radius: 15px;
@@ -123,44 +127,43 @@ article img {
 }
 
 /* ==============================
-   CHECKOUT TABLE STYLING
+   ACCORDION
    ============================== */
-
-#order-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
-#order-table th, #order-table td {
-  border: 2px solid var(--golden);
-  padding: 12px 8px;
-  text-align: left;
-}
-
-#order-table th {
-  background: var(--lavender);
-  color: var(--white);
-  font-size: 1.1rem;
-}
-
-#order-table tbody tr:nth-child(even) {
-  background: var(--soft-pink);
-}
-
-#order-table input[type="checkbox"] {
-  transform: scale(1.2);
+.accordion-btn {
+  background-color: #9f7944;
+  color: white;
   cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  margin-top: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background 0.3s ease;
 }
 
-#totals p {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin: 5px 0;
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  padding: 0 1rem; /* initial padding */
+}
+
+.accordion-content.active {
+  max-height: 500px; /* adjust as needed */
+  padding: 1rem;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* ==============================
-   FORMS STYLING
+   CONTACT FORM & MODAL
    ============================== */
 form {
   background: var(--soft-pink);
@@ -176,7 +179,7 @@ form label {
   color: var(--dark);
 }
 
-form input, form textarea, form select {
+form input, form textarea {
   width: 100%;
   padding: 10px;
   margin: 8px 0 15px;
@@ -185,7 +188,7 @@ form input, form textarea, form select {
   outline: none;
 }
 
-form button {
+form button, .open-modal-btn {
   background: var(--lavender);
   color: var(--white);
   padding: 12px 20px;
@@ -196,13 +199,150 @@ form button {
   transition: 0.3s;
 }
 
-form button:hover {
+form button:hover, .open-modal-btn:hover {
   background: var(--golden);
   color: var(--dark);
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
 
-#checkout button {
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 80%;
+  text-align: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #333;
+}
+
+details {
+  background: var(--soft-pink);
+  border: 2px solid var(--golden);
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+summary {
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--lavender);
+  font-size: 1.1rem;
+}
+
+details[open] {
+  background: #fff0f6;
+}
+
+
+/* ==============================
+   DAILY VERSE
+   ============================== */
+.daily-verse {
+  color: var(--golden);
+  font-style: italic;
+  font-size: 1.2rem;
+  transition: opacity 0.5s ease;
+  margin: 15px 0;
+}
+
+/* Hover Zoom Effect */
+.zoomable {
+  transition: transform 0.3s ease;
+  cursor: pointer; 
+}
+
+.zoomable:hover {
+  transform: scale(1.2);
+  z-index: 2;
+  position: relative;
+}
+
+/* Confetti styling */
+.confetti {
+  position: fixed;
+  top: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.9;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: #ffd54f;
+  animation: fall 2s linear forwards;
+}
+
+@keyframes fall {
+  0% { transform: translateY(-20px) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+}
+
+#checkout {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+  background: var(--soft-pink);
+  border-radius: 15px;
+  border: 2px solid var(--golden);
+}
+
+#order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#order-table th, #order-table td {
+  border: 2px solid var(--golden);
+  padding: 12px 10px;
+  text-align: center;
+}
+
+#order-table th {
+  background: var(--lavender);
+  color: var(--white);
+}
+
+#order-table tbody tr:nth-child(even) {
+  background: #fff0f6;
+}
+
+#order-table input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#totals p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+#checkout-btn {
   background: var(--lavender);
   color: var(--white);
   padding: 12px 25px;
@@ -212,39 +352,25 @@ form button:hover {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 0 5px var(--lavender);
 }
 
-#checkout button:hover {
+#checkout-btn:hover {
   background: var(--golden);
   color: var(--dark);
   box-shadow: 0 0 12px var(--golden), 0 0 20px var(--lavender);
   transform: translateY(-2px);
 }
 
-#filter-container {
-  text-align: center;
-  margin: 20px 0;
-}
-
-#product-filter {
-  padding: 10px;
-  width: 60%;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-}
-
 /* ==============================
-   FOOTER HERO SHOT
+   FOOTER
    ============================== */
 footer {
   position: relative;
   text-align: center;
   color: var(--white);
-  padding: 80px 20px; /* bigger padding for hero effect */
+  padding: 80px 20px;
   overflow: hidden;
-  background-color: #d473d4; /* purple base */
+  background-color: #d473d4;
 }
 
 footer::before {
@@ -256,11 +382,11 @@ footer::before {
   height: 100%;
   background: url('_images/cef6359207669b9d78226b970ba34ca9.jpg') no-repeat center center;
   background-size: cover;
-  opacity: 0.5; /* adjust overlay darkness */
+  opacity: 0.5;
   z-index: 0;
 }
 
 footer * {
-  position: relative; /* ensures text and images appear above hero background */
+  position: relative;
   z-index: 1;
 }
