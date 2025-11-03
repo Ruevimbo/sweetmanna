@@ -223,6 +223,52 @@ Goal 5: Ensure accessibility and scalability in future growth
     - It has improved interactivity, performance, and emotional appeal through color, layout, and subtle motion effects.  
     - The overall user experience feels smoother, engaging, and true to the Sweet Manna brand identity.  
 
+    **(2025-11-1)** 
+- **v1.9 — Functional Enhancements, SEO, Security, and Additional Pages**  
+
+  - **JavaScript Enhancements:**  
+    - Consolidated all scripts into a single `script.js` file for easier management and better performance.  
+    - Added daily verse rotator, page fade-ins, smooth scroll navigation, contact form handling, checkout table calculations, FAQ accordion functionality, modals, button hover glow, confetti animation, and zoomable images.  
+    - Improved readability and maintainability by adding comments in all JavaScript functions.  
+
+  - **SEO and Meta Improvements:**  
+    - Added both on-page and off-page SEO tags to all HTML files, including meta description, keywords, author, Open Graph (OG), and Twitter card tags.  
+    - Purpose: Improve search engine visibility and social media sharing.  
+
+  - **Inquiry Page:**  
+    - Added a new inquiry page as requested.  
+    - Linked inquiry page to `script.js` and `style.css` for consistent functionality and design.  
+    - Updated navigation menus to include the inquiry page, ensuring seamless site navigation.  
+
+  - **Security Enhancements:**  
+    - Implemented Content Security Policy (CSP) headers across all pages.  
+    - Secured all external resources to reduce risk of malicious scripts or attacks.  
+
+  - **Robots.txt & Sitemap:**  
+    - Added `robots.txt` to guide search engine crawlers.  
+    - Added `sitemap.xml` to improve indexing and ensure all pages are discoverable by search engines.  
+
+  - **Social Media Integration:**  
+    - Added links to Facebook, Instagram, and TikTok in the footer.  
+    - Improved visibility and accessibility of social media connections.  
+
+  - **FAQs Section:**  
+    - Added FAQ accordion functionality to the Contact Us page.  
+    - Purpose: Provide quick answers to common questions and improve user experience.  
+
+  - **Comments Across Files:**  
+    - Added detailed comments to HTML, CSS, and JS files to enhance readability and ease of future maintenance. 
+
+    **References** 
+    - Adeded more references as i have used other ways to help me understand and code my website properly.
+
+  - **Overall Result:**  
+    - Website now has improved functionality, SEO, security, and navigation.  
+    - User experience enhanced with interactive features, FAQs, and smoother animations.  
+    - Fully centralized scripts and styling ensure consistency across all pages and simplify future updates.  
+
+
+
   
 
 ---
@@ -235,3 +281,11 @@ Goal 5: Ensure accessibility and scalability in future growth
 - Pinterest. (2025). *Creative bakery ideas.* Retrieved from: https://www.pinterest.com  
 - Reddit users. (2024). *Advice on Cheap Hosting and Domains in South Africa.* r/johannesburg. .co.za domains ~R100/year, free or cheap hosting options.  
 - Smith, J. (2023). *The Role of Faith in Christian Small Business Branding.* Cape Town: Divine Business Publishing.  
+
+- Contentsquare (2024) *Web design checklist: 15 steps to creating an amazing site*. [online] Available at: <https://contentsquare.com/guides/web-design/checklist/> [Accessed 3 Nov 2025].  
+  Source: contentsquare.com
+- Neil Patel (2025) *10 Best Practice to Improve Your SEO Rankings in 2025*. [online] Available at: <https://backlinko.com/hub/seo/best-practices> [Accessed 3 Nov 2025].  
+  Source: Backlinko
+   Google Search Central (2025) *How To Add Javascript in your Website as an xEternal File*. [online] Available at: <https://developers.google.com/search/docs/fundamentals/seo-starter-guide> [Accessed 3 Nov 2025].  
+  Source: developers.google.com
+
